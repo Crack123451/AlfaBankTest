@@ -1,0 +1,48 @@
+﻿<p>@Html.ViewBag.Code</p>
+
+<h4>Список возможных запросов</h4>
+
+<style>
+    table {
+        width: 100%;
+        border: 4px black;
+    }
+
+    th {
+        text-align: center;
+        background: #ccc;
+        padding: 5px;
+        border: 1px solid black;
+    }
+
+    td {
+        padding: 5px;
+        border: 1px solid black;
+    }
+</style>
+<table>
+    <tr>
+        <th>Запрос</th>
+        <th>Описание</th>
+    </tr>
+    <tr>
+        <td>GET api/values/5</td>
+        <td>Запрос на получение одной записи с таблицы Shop по номеру id</td>
+    </tr>
+    <tr>
+        <td>GET api/values/?request=count</td>
+        <td>Запрос на получение количества записей</td>
+    </tr>
+    <tr>
+        <td>GET api/values/?request=maxPrice</td>
+        <td>Запрос на получение максимальной цены за товар</td>
+    </tr>
+    <tr>
+        <td>GET api/values/?request=minPrice</td>
+        <td>Запрос на получение минимальной цены за товар</td>
+    </tr>
+    <tr>
+        <td>GET api/values/?request=averagePrice</td>
+        <td>Запрос на получение средней цены за товар</td>
+    </tr>
+</table>
